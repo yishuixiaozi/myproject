@@ -5,4 +5,8 @@ import com.hhit.model.User;
 public interface UserService {
     //按用户名查询用户测试
     User selectByusername(String username);
+    //用户登陆部分
+    User selectLogin(String username,String password);
+    //用户登陆部分，对象形式传递
+    User selectlogin(User user);
 }

@@ -6,6 +6,15 @@
    <select id="selectByusername" resultType="com.hhit.model.User" parameterType="String">
       select * from user where username=#{username}
    </select>
+
+   <select id="selectLogin" resultType="com.hhit.model.User" parameterType="String">
+      select * from user where username=#{username}
+   </select>
+
+    <select id="selectlogin" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
+        select * from user where username=#{username} and password=#{password}
+    </select>
+
    <!-- <select id="selectUser" resultType="com.hhit.model.User" parameterType="String">
         select * from user where username=#{username}
     </select>

@@ -21,6 +21,7 @@
 </head>
 
 <body>
-  <a href="/user/login.action">测试内容跳转</a>
+  <a href="/user/login.action">测试内容跳转</a><br>
+  <a href="view/login.jsp">跳转到登陆页面</a>
 </body>
 </html>
