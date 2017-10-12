@@ -98,8 +98,8 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i> 添加部门</a></li>
-                <li><a class="menu_a" link="view/grid.jsp"><i class="icon icon-caret-right"></i>查询部门</a></li>
-                <li><a class="menu_a" link="view/usermanage.jsp"><i class="icon icon-caret-right"></i>删除部门</a></li>
+                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询部门</a></li>
+                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除部门</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改部门</a></li>
             </ul>
         </li>
@@ -112,7 +112,7 @@
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>添加职位</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询职位</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除职位</a></li>
-                <li><a class="menu_a" link="view/chat.jsp"><i class="icon icon-caret-right"></i>修改职位</a></li>
+                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改职位</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -124,7 +124,7 @@
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>添加员工</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询员工</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除员工</a></li>
-                <li><a class="menu_a" link="view/chat.jsp"><i class="icon icon-caret-right"></i>修改员工</a></li>
+                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改员工</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -134,8 +134,8 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i> 添加公告</a></li>
-                <li><a class="menu_a" link="view/grid.jsp"><i class="icon icon-caret-right"></i>查询公告</a></li>
-                <li><a class="menu_a" link="view/usermanage.jsp"><i class="icon icon-caret-right"></i>删除公告</a></li>
+                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询公告</a></li>
+                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除公告</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改公告</a></li>
             </ul>
         </li>
@@ -145,10 +145,10 @@
                 <span>下载中心</span>
             </a>
             <ul>
-                <li><a class="menu_a" id="yo"  link="view/updatepassword.jsp"><i class="icon icon-caret-right"></i>上传文件</a></li>
-                <li><a class="menu_a" id="yongh" link="view/adduser.jsp"><i class="icon icon-caret-right"></i>查询文件</a></li>
-                <li><a class="menu_a" id="yong" link="view/updatepassword.jsp"><i class="icon icon-caret-right"></i>删除文件</a></li>
-                <li><a class="menu_a" id="yong23" link="view/updatepassword.jsp"><i class="icon icon-caret-right"></i>下载文件</a></li>
+                <li><a class="menu_a" id="yo"  link="#><i class="icon icon-caret-right"></i>上传文件</a></li>
+                <li><a class="menu_a" id="yongh" link="#"><i class="icon icon-caret-right"></i>查询文件</a></li>
+                <li><a class="menu_a" id="yong" link="#"><i class="icon icon-caret-right"></i>删除文件</a></li>
+                <li><a class="menu_a" id="yong23" link="#"><i class="icon icon-caret-right"></i>下载文件</a></li>
             </ul>
         </li>
         <li class="submenu">

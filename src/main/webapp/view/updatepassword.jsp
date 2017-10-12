@@ -8,16 +8,12 @@
 <html>
 <head>
     <base href="<%=basePath%>">
-
     <title>My JSP 'index.jsp' starting page</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
-    <!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/bootstrap-responsive.min.css" />
@@ -38,9 +34,9 @@
                      data:"password="+$("#password").val(),
                      type:"GET",
                      dataType:'json',
-                     url:"user/updatepass.action",
+                     url:"user/updatepassword.action",
                      error:function (data) {
-                         alert(data["msg"]);
+                         alert("出现些问题");
                      },
                      success:function(data){
                          alert(data["msg"]);//返回的data是一个map,所以data["msg"]是对象的值

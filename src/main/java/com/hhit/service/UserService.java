@@ -9,4 +9,6 @@ public interface UserService {
     User selectLogin(String username,String password);
     //用户登陆部分，对象形式传递
     User selectlogin(User user);
+    //个人的信息修改
+    void updatepass(User user);
 }

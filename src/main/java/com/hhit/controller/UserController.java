@@ -10,7 +10,10 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.util.HashMap;
+import java.util.Map;
 
 @Controller
 @RequestMapping(value="/user")
@@ -59,5 +62,22 @@ public class UserController {
             }
         }
         return msg;
+    }
+    @RequestMapping(value="/updatepassword")
+    @ResponseBody
+    public Map<String, Object> updatepassword(HttpServletRequest request, HttpServletResponse response) throws Exception{
+        HttpSession session=request.getSession();
+        String username=(String)session.getAttribute("username");
+        user.setUsername(username);
+        user.setPassword(request.getParameter("password"));
+        Map<String,Object> map=new HashMap<String, Object>();
+        if(request.getParameter("password")==null){
+            map.put("msg","修改信息失败，请重新修改");
+        }
+        else{
+            userservice.updatepass(user);
+            map.put("msg","信息修改成功，请重新登录");
+        }
+        return map;
     }
 }

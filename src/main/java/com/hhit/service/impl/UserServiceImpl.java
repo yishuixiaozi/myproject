@@ -31,4 +31,13 @@ public class UserServiceImpl implements UserService{
     public User selectlogin(User user) {
         return null;
     }
+
+    /**
+     * 主页面密码修改
+     * @param user
+     */
+    @Override
+    public void updatepass(User user) {
+        userDao.updatepass(user);
+    }
 }
