@@ -3,7 +3,9 @@
 
 <!-- 设置为IUserDao接口方法提供sql语句配置 -->
 <mapper namespace="com.hhit.dao.UserDao">
-
+   <select id="selectByusername" resultType="com.hhit.model.User" parameterType="String">
+      select * from user where username=#{username}
+   </select>
    <!-- <select id="selectUser" resultType="com.hhit.model.User" parameterType="String">
         select * from user where username=#{username}
     </select>
