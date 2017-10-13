@@ -122,7 +122,7 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>添加员工</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询员工</a></li>
+                <li><a class="menu_a" link="/employee/employeequery.action"><i class="icon icon-caret-right"></i>员工查询</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除员工</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改员工</a></li>
             </ul>
