@@ -134,7 +134,7 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i> 添加公告</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询公告</a></li>
+                <li><a class="menu_a" link="/notice/noticequery.action"><i class="icon icon-caret-right"></i>公告查询</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除公告</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改公告</a></li>
             </ul>
