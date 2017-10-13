@@ -86,7 +86,7 @@
 
             </a>
             <ul>
-                <li><a class="menu_a" id="yonghu"  link="view/updatepassword.jsp"><i class="icon icon-caret-right"></i>用户查询</a></li>
+                <li><a class="menu_a" id="yonghu"  link="/user/userquery.action"><i class="icon icon-caret-right"></i>用户查询</a></li>
                 <li><a class="menu_a" id="yonghu1" link="view/adduser.jsp"><i class="icon icon-caret-right"></i>添加用户</a></li>
                 <li><a class="menu_a" id="yonghu3" link="view/updatepassword.jsp"><i class="icon icon-caret-right"></i>个人密码修改</a></li>
             </ul>

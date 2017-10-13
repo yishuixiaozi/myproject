@@ -2,6 +2,8 @@ package com.hhit.service;
 
 import com.hhit.model.User;
 
+import java.util.List;
+
 public interface UserService {
     //按用户名查询用户测试
     User selectByusername(String username);
@@ -11,4 +13,6 @@ public interface UserService {
     User selectlogin(User user);
     //个人的信息修改
     void updatepass(User user);
+    //查询用户集合
+    List<User> userSearchall();
 }

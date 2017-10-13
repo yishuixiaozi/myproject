@@ -4,6 +4,7 @@ import com.hhit.model.User;
 import com.hhit.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -63,6 +65,14 @@ public class UserController {
         }
         return msg;
     }
+
+    /**
+     * 处理用户密码修改
+     * @param request 获取界面参数
+     * @param response
+     * @return
+     * @throws Exception 抛出异常
+     */
     @RequestMapping(value="/updatepassword")
     @ResponseBody
     public Map<String, Object> updatepassword(HttpServletRequest request, HttpServletResponse response) throws Exception{
@@ -80,4 +90,19 @@ public class UserController {
         }
         return map;
     }
+
+    /**
+     * 用户所有表的信息集合查询
+     * @param modelMap 存储集合信息
+     * @return
+     */
+    @RequestMapping(value="/userquery")
+    public String userquery(ModelMap modelMap){
+        List<User> userlist;
+        userlist=userservice.userSearchall();
+        modelMap.addAttribute("userlist",userlist);
+        return "userquery";
+    }
+
+
 }

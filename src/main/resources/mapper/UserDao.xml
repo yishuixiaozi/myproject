@@ -19,6 +19,11 @@
         UPDATE user set password=#{password} where username=#{username}
     </update>
 
+    <select id="userSearchall" resultType="com.hhit.model.User" >
+        select * from user
+    </select>
+
+
    <!-- <select id="selectUser" resultType="com.hhit.model.User" parameterType="String">
         select * from user where username=#{username}
     </select>

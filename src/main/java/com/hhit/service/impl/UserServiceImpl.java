@@ -6,6 +6,7 @@ import com.hhit.service.UserService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 @Service(value="userservice")
 public class UserServiceImpl implements UserService{
@@ -39,5 +40,10 @@ public class UserServiceImpl implements UserService{
     @Override
     public void updatepass(User user) {
         userDao.updatepass(user);
+    }
+
+    @Override
+    public List<User> userSearchall() {
+        return userDao.userSearchall();
     }
 }
