@@ -33,32 +33,30 @@
 <body>
 <div id="content">
     <div id="content-header">
-        <h1>用户表格</h1>
+        <h1>部门表格</h1>
     </div>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                        <h5>用户信息显示</h5>
+                        <h5>部门信息显示</h5>
                     </div>
                     <div class="widget-content nopadding">
                         <table class="table table-bordered data-table">
                             <thead>
                             <tr>
-                                <th>用户名</th>
-                                <th>状态</th>
-                                <th>创建日期</th>
-                                <th>登陆身份</th>
+                                <th>序号</th>
+                                <th>工作名称</th>
+                                <th>描述</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <c:forEach var="user" items="${userlist}">
+                            <c:forEach var="job" items="${joblist}">
                                 <tr class="gradeX">
-                                    <td>${user.username}</td>
-                                    <td>${user.status}</td>
-                                    <td>${user.createDate}</td>
-                                    <td>${user.loginname}</td>
+                                    <td>${job.id}</td>
+                                    <td>${job.name}</td>
+                                    <td>${job.remark}</td>
                                 </tr>
                             </c:forEach>
                             </tbody>

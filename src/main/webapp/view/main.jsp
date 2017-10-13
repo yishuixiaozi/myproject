@@ -24,7 +24,7 @@
 <body>
 <!--Header-part-->
 <div id="header">
-    <h1><a href="dashboard.html">人事管理系统</a></h1>
+    <h1><a href="#">人事管理系统</a></h1>
 </div>
 <!--close-Header-part-->
 <!--top-Header-menu-->
@@ -77,7 +77,7 @@
 <div id="sidebar" style="OVERFLOW-Y: auto; OVERFLOW-X:hidden;">
     <ul>
         <li class="submenu active">
-            <a class="menu_a" link="index.jsp"><i class="icon icon-home"></i> <span>控制面板</span></a>
+            <a class="menu_a" link="view/selfmessage.jsp"><i class="icon icon-home"></i> <span>控制面板</span></a>
         </li>
         <li class="submenu">
             <a href="#">
@@ -98,7 +98,7 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i> 添加部门</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询部门</a></li>
+                <li><a class="menu_a" link="/dept/deptquery.action"><i class="icon icon-caret-right"></i>查询部门</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除部门</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改部门</a></li>
             </ul>
@@ -110,7 +110,7 @@
             </a>
             <ul>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>添加职位</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>查询职位</a></li>
+                <li><a class="menu_a" link="/job/jobquery.action"><i class="icon icon-caret-right"></i>查询职位</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>删除职位</a></li>
                 <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改职位</a></li>
             </ul>
@@ -172,7 +172,7 @@
         <div id="breadcrumb"> <a href="index.jsp" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a></div>
     </div>
     <!--End-breadcrumbs,这里是该进入后台管理页面的时候就会显示的内容，相当于次首页内容了-->
-    <iframe src="view/index2.jsp" id="iframe-main" frameborder='0' style="width:100%;"></iframe>
+    <iframe src="view/selfmessage.jsp" id="iframe-main" frameborder='0' style="width:100%;"></iframe>
 </div>
 <!--end-main-container-part-->
 
