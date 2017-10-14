@@ -1,5 +1,4 @@
 package com.hhit.controller;
-
 import com.hhit.model.User;
 import com.hhit.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +15,6 @@ import javax.servlet.http.HttpSession;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
 @Controller
 @RequestMapping(value="/user")
 public class UserController {
@@ -30,8 +28,8 @@ public class UserController {
     @RequestMapping(value="/login1")
     public String test(){
         user=userservice.selectByusername("zxr");
-        System.out.println("springmvc测试成功！");
-        System.out.println("测试数据库连接"+user.getLoginname());
+        //System.out.println("springmvc测试成功！");
+        //System.out.println("测试数据库连接"+user.getLoginname());
         return "login";
     }
     /**
@@ -62,7 +60,6 @@ public class UserController {
         }
         return msg;
     }
-
     /**
      * 处理用户密码修改
      * @param request 获取界面参数
@@ -87,7 +84,6 @@ public class UserController {
         }
         return map;
     }
-
     /**
      * 用户所有表的信息集合查询
      * @param modelMap 存储集合信息
