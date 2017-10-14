@@ -20,12 +20,9 @@ import java.util.Map;
 @Controller
 @RequestMapping(value="/user")
 public class UserController {
-
     @Resource
     private UserService userservice;
-
     User user=new User();
-
     /**
      * 测试部分模块
      * @return

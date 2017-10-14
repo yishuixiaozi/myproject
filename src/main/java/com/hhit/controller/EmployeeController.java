@@ -18,23 +18,15 @@ public class EmployeeController {
 
     @Resource
     private EmployeeService employeeService;
+
+    /**
+     * 员工信息的全部显示查询
+     * @param modelMap 携带集合信息到页面
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value="/employeequery")
     public String employequery(ModelMap modelMap) throws Exception{
-
-        Employee emp=new Employee();
-        emp.setBithday(new Date());
-        System.out.println("日期格式测试"+emp.getBithday());
-       /* String dateStr = "Wed Sep 16 11:26:23 CST 2009";
-        SimpleDateFormat sdf = new SimpleDateFormat("EEE MMM dd HH:mm:ss zzz yyyy", Locale.US);
-
-        Date date=(Date)sdf.parse(dateStr);
-
-        String formatStr = new SimpleDateFormat("yyyy-MM-dd").format(date);
-        System.out.println(formatStr);
-
-        String formatStr2 = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
-        System.out.println(formatStr2);*/
-
         List<Employee> employeelist;
         employeelist=employeeService.employeeSearchall();
         modelMap.addAttribute("employeelist",employeelist);

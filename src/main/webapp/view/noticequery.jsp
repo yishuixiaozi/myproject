@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -58,7 +59,7 @@
                                     <td>${notice.id}</td>
                                     <td>${notice.title}</td>
                                     <td>${notice.content}</td>
-                                    <td>${notice.create_date}</td>
+                                    <td><spring:eval expression="notice.create_date"></spring:eval></td>
                                 </tr>
                             </c:forEach>
                             </tbody>

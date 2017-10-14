@@ -14,9 +14,13 @@ public class JobController {
     @Resource
     private JobService jobserivce;
 
+    /**
+     * 职位信息的全部查询
+     * @param modelMap
+     * @return
+     */
     @RequestMapping(value="/jobquery")
     public String jobsearch(ModelMap modelMap){
-        System.out.println("ceshi11111111111");
         List<Job> joblist;
         joblist=jobserivce.jobSearchall();
         modelMap.addAttribute("joblist",joblist);

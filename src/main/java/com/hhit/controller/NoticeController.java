@@ -15,9 +15,13 @@ public class NoticeController {
     @Resource
     private NoticeService noticeService;
 
+    /**
+     * 全部信息的查询
+     * @param modelMap
+     * @return
+     */
     @RequestMapping(value="/noticequery")
     public String noticequery(ModelMap modelMap){
-        System.out.println("公告测试");
         List<Notice> noticelist;
         noticelist=noticeService.noticeSearchall();
         modelMap.addAttribute("noticelist",noticelist);

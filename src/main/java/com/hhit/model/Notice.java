@@ -1,5 +1,7 @@
 package com.hhit.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class Notice {
@@ -7,6 +9,10 @@ public class Notice {
     private String title;
     private String content;
     private Date createDate;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    //这个是从数据的date类型日期格式通过注解方式直接为数字类型
+    //1、需要加载相应的包，joda-time 包，2、并且需要在页面内加上
+    // <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
     private Date create_date;
     //无参构造器
     public Notice(){
