@@ -13,27 +13,14 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
+    <!--
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	-->
 </head>
 <body>
-  <h2>文件上传</h2>
-  <form action="/doucument/adddocument.action" enctype="multipart/form-data" method="post">
-      <table>
-          <tr>
-              <td>标题</td>
-              <td><input type="text" name="title"></td>
-          </tr>
-          <tr>
-              <td>文件描述：</td>
-              <td><input type="text" name="remark"></td>
-          </tr>
-          <tr>
-              <td>请选择文件：</td>
-              <td><input type="file" name="file"></td>
-          </tr>
-          <tr>
-              <td><input type="submit" value="上传"></td>
-          </tr>
-      </table>
-  </form>
+    <h3>文件下载</h3>
+    <a href="/doucument/download.action?filename=${requestScope.document.file.originalFilename}">
+       ${requestScope.document.file.originalFilename}
+    </a>
 </body>
 </html>
