@@ -142,13 +142,12 @@
         <li class="submenu">
             <a href="#">
                 <i class="icon icon-table"></i>
-                <span>下载中心</span>
+                <span>文件中心</span>
             </a>
             <ul>
-                <li><a class="menu_a" id="yo"  link="#><i class="icon icon-caret-right"></i>上传文件</a></li>
-                <li><a class="menu_a" id="yongh" link="#"><i class="icon icon-caret-right"></i>查询文件</a></li>
+                <li><a class="menu_a" id="yo"  link="view/uploadForm1.jsp"><i class="icon icon-caret-right"></i>上传文件</a></li>
+                <li><a class="menu_a" id="yongh" link="/doucument/documentquery.action"><i class="icon icon-caret-right"></i>查询文件</a></li>
                 <li><a class="menu_a" id="yong" link="#"><i class="icon icon-caret-right"></i>删除文件</a></li>
-                <li><a class="menu_a" id="yong23" link="#"><i class="icon icon-caret-right"></i>下载文件</a></li>
             </ul>
         </li>
         <li class="submenu">

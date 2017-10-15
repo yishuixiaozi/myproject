@@ -16,16 +16,15 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.util.List;
 
 @Controller
 @RequestMapping(value="/doucument")
 public class DocumentController {
-
     @Resource
     private DocumentService documentService;
-
     @RequestMapping(value="/addDocument")
     public String upload(HttpServletRequest request, @RequestParam("description") String description,
                          @RequestParam("file")MultipartFile file) throws Exception{
@@ -49,7 +48,6 @@ public class DocumentController {
             return "error";
         }
     }
-
     /**
      * 文件对象上传
      * @param request
@@ -81,17 +79,19 @@ public class DocumentController {
             System.out.println("看看get"+document.getFile());
             document.setFilename(filename);//设置文件名
             document.setFilepath(path);//设置文件存储地方
-
             //下面开始数据库的信息操作
+            HttpSession session=request.getSession();
+            String username=(String)session.getAttribute("username");
+            System.out.println("111111111111"+username);
+            document.setUpuser(username);
             documentService.addDocument(document);
             System.out.println("添加成功");
             model.addAttribute("document",document);
-            return "documentquery1";
+            return "redirect:/doucument/documentquery.action";
         }else{
             return "error";
         }
     }
-
     /**
      * 文件的下载
      * @param request
@@ -116,7 +116,6 @@ public class DocumentController {
         //201HttpStatus.CREATED
         return new ResponseEntity<byte[]>(FileUtils.readFileToByteArray(file),headers, HttpStatus.CREATED);
     }
-
     @RequestMapping(value="/documentquery")
     public String documentquery(ModelMap modelMap){
         List<Document> documentlist;

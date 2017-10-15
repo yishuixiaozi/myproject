@@ -11,6 +11,8 @@ public class Document implements Serializable{
     private MultipartFile file;
     private String remark;
     private String filepath;
+
+    private String upuser;
     @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private java.util.Date create_date;
 
@@ -82,5 +84,13 @@ public class Document implements Serializable{
 
     public void setFilepath(String filepath) {
         this.filepath = filepath;
+    }
+
+    public String getUpuser() {
+        return upuser;
+    }
+
+    public void setUpuser(String upuser) {
+        this.upuser = upuser;
     }
 }

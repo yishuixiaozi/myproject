@@ -13,27 +13,38 @@
     <meta http-equiv="expires" content="0">
     <meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
     <meta http-equiv="description" content="This is my page">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.0.1/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-responsive.min.css">
 </head>
 <body>
-  <h2>文件上传</h2>
-  <form action="/doucument/adddocument.action" enctype="multipart/form-data" method="post">
-      <table>
-          <tr>
-              <td>标题</td>
-              <td><input type="text" name="title"></td>
-          </tr>
-          <tr>
-              <td>文件描述：</td>
-              <td><input type="text" name="remark"></td>
-          </tr>
-          <tr>
-              <td>请选择文件：</td>
-              <td><input type="file" name="file"></td>
-          </tr>
-          <tr>
-              <td><input type="submit" value="上传"></td>
-          </tr>
-      </table>
-  </form>
+<h2>文件上传</h2>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <form role="form" action="/doucument/adddocument.action" enctype="multipart/form-data"  method="post">
+                <div class="form-group">
+                    <label for="exampleInputEmail1">文件标题</label><input type="text" name="title" class="form-control"
+                     style="height: 35px"  id="exampleInputEmail1" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">文件描述</label><input type="text" name="remark" class="form-control"
+                     style="height: 35px" id="exampleInputPassword1" />
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile"></label><input type="file" name="file" id="exampleInputFile" />
+                </div>
+                <div class="container-fluid" style="position: relative;left: -22px;">
+                    <div class="row-fluid">
+                        <div class="span12">
+                            <input  type="submit" value="上传文件">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
 </body>
 </html>

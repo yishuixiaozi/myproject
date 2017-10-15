@@ -41,22 +41,28 @@
                         <table class="table table-bordered data-table">
                             <thead>
                             <tr>
+                                <th>序号</th>
                                 <th>标题</th>
                                 <th>文件名</th>
                                 <th>文件描述</th>
                                 <th>上传日期</th>
-                                <td>上传者</td>
+                                <th>上传者</th>
+                                <th>↓下载↓</th>
                             </tr>
                             </thead>
                             <tbody>
                             <c:forEach var="document" items="${documentlist}">
                                 <tr class="gradeX">
+                                    <td>${document.id}</td>
                                     <td>${document.title}</td>
                                     <td>${document.filename}</td>
                                     <td>${document.remark}</td>
                                     <td><spring:eval expression="document.create_date"></spring:eval></td>
-                                    <td>周向荣（定值待完善）</td>
+                                    <td>${document.upuser}</td>
                                         <%--  <td>${employee.createdate}</td>--%>
+                                    <td><a style="color: #5eb95e" href="/doucument/download.action?filename=${document.filename}">
+                                            下载
+                                    </a></td>
                                 </tr>
                             </c:forEach>
                             </tbody>
