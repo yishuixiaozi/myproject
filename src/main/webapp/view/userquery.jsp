@@ -1,5 +1,6 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
@@ -46,19 +47,23 @@
                         <table class="table table-bordered data-table">
                             <thead>
                             <tr>
+                                <th><input name="selectname" type="checkbox" value=""/></th>
                                 <th>用户名</th>
                                 <th>状态</th>
                                 <th>创建日期</th>
                                 <th>登陆身份</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
                             <c:forEach var="user" items="${userlist}">
                                 <tr class="gradeX">
+                                    <td><input name="selectname" type="checkbox" value=""/></td>
                                     <td>${user.username}</td>
                                     <td>${user.status}</td>
-                                    <td>${user.createDate}</td>
+                                    <td><spring:eval expression="user.createDate"></spring:eval></td>
                                     <td>${user.loginname}</td>
+                                    <td><a href="/user/deleteuser.action?id=${user.id}">删除</a></td>
                                 </tr>
                             </c:forEach>
                             </tbody>

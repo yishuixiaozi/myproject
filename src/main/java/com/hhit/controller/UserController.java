@@ -97,5 +97,11 @@ public class UserController {
         return "userquery";
     }
 
+    @RequestMapping(value="/deleteuser")
+    public String deleteuser(HttpServletRequest request) throws Exception{
+        System.out.println("id参数值获取"+request.getParameter("id"));
+        return "1";
+    }
+
 
 }

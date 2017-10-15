@@ -7,21 +7,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="207c5422-8ca3-4e87-a181-5c5eb12c0463" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/img/loading-sm.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/img/loading.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/css/fileinput-rtl.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/css/fileinput-rtl.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/css/fileinput.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/css/fileinput.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/js/fileinput.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/js/fileinput.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../MyProject/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/DocumentController.java" afterPath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/DocumentController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/Document.java" afterPath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/Document.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/resources/mapper/DocumentDao.xml" afterPath="$PROJECT_DIR$/../MyProject/src/main/resources/mapper/DocumentDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/documentquery.jsp" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/documentquery.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/main.jsp" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/main.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/uploadForm1.jsp" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/uploadForm1.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java" afterPath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/User.java" afterPath="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/userquery.jsp" afterPath="$PROJECT_DIR$/../MyProject/src/main/webapp/view/userquery.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/../myproject/out/" />
     <ignored path="$PROJECT_DIR$/../MyProject/target/" />
@@ -33,61 +22,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="documentquery.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyProject/src/main/webapp/view/documentquery.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="59" column="106" lean-forward="true" selection-start-line="59" selection-start-column="106" selection-end-line="59" selection-end-column="106" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/DocumentController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="77" column="82" lean-forward="true" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DocumentDao.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyProject/src/main/resources/mapper/DocumentDao.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-              <folding>
-                <marker date="1508067956565" expanded="true" signature="310:332" ph="select * fro... document" />
-                <marker date="1508067956565" expanded="true" signature="442:569" ph="insert into document... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../MyProject/src/main/webapp/view/main.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="144" column="33" lean-forward="true" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="73" column="65" lean-forward="true" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -114,7 +49,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/updatepassword.jsp" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/selfmessage.jsp" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/interceptor.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/common/PageModel.java" />
@@ -130,7 +64,6 @@
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/service/DeptService.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/service/impl/DeptServiceImpl.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/deptquery.jsp" />
-        <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/userquery.jsp" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/Job.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/service/JobService.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/jobquery.jsp" />
@@ -154,7 +87,6 @@
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/DeptController.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/JobController.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/NoticeController.java" />
-        <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/uploadForm.jsp" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/service/DocumentService.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/dao/DocumentDao.java" />
@@ -165,6 +97,9 @@
         <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/documentquery.jsp" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/DocumentController.java" />
         <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/main.jsp" />
+        <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/User.java" />
+        <option value="$PROJECT_DIR$/../MyProject/src/main/webapp/view/userquery.jsp" />
+        <option value="$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java" />
       </list>
     </option>
   </component>
@@ -203,9 +138,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="183" />
-    <option name="y" value="5" />
-    <option name="width" value="1311" />
+    <option name="x" value="61" />
+    <option name="y" value="15" />
+    <option name="width" value="1378" />
     <option name="height" value="727" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -234,11 +169,6 @@
             <path>
               <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MyProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MyProject" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -454,7 +384,7 @@
       <workItem from="1507982405815" duration="11192000" />
       <workItem from="1508028119952" duration="8606000" />
       <workItem from="1508048183181" duration="6611000" />
-      <workItem from="1508059413804" duration="9078000" />
+      <workItem from="1508059413804" duration="13611000" />
     </task>
     <task id="LOCAL-00001" summary="第一次提交：版本1.1&#10;1、完成数据库建立和ssm框架搭建&#10;2、完成springMVC测试成功">
       <created>1507778136424</created>
@@ -547,14 +477,21 @@
       <option name="project" value="LOCAL" />
       <updated>1508038290292</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="第12次提交：版本2.2&#10;1、完成文件的上传和下载去不功能&#10;2、文件上传实现对应用户的添加">
+      <created>1508069627711</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1508069627711</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88711000" />
+    <option name="totallyTimeSpent" value="93244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="183" y="5" width="1311" height="727" extended-state="0" />
+    <frame x="61" y="15" width="1378" height="727" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -576,10 +513,10 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12052117" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23941368" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1938224" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14610866" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -610,7 +547,8 @@
     <MESSAGE value="第九次提交：版本1.9&#10;1、删除多余测试注释。简洁化代码。&#10;2、所有时间Date类型的日期CST时间格式转换为yyyy-MM-dd HH:mm:ss数字格式输出。" />
     <MESSAGE value="第十次提交：版本2.0&#10;1、完成文件上传，测试成功&#10;2、目标：文件下载" />
     <MESSAGE value="第11次提交：版本2.1&#10;1、文件上传存储实现，数据库关联信息存储完毕&#10;2、文件下载功能点初步实现。" />
-    <option name="LAST_COMMIT_MESSAGE" value="第11次提交：版本2.1&#10;1、文件上传存储实现，数据库关联信息存储完毕&#10;2、文件下载功能点初步实现。" />
+    <MESSAGE value="第12次提交：版本2.2&#10;1、完成文件的上传和下载去不功能&#10;2、文件上传实现对应用户的添加" />
+    <option name="LAST_COMMIT_MESSAGE" value="第12次提交：版本2.2&#10;1、完成文件的上传和下载去不功能&#10;2、文件上传实现对应用户的添加" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -713,7 +651,7 @@
     <entry file="file://$PROJECT_DIR$/../MyProject/src/main/resources/mapper/DocumentDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
-          <caret line="11" column="67" lean-forward="true" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
+          <caret line="11" column="67" lean-forward="false" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
           <folding>
             <marker date="1508067956565" expanded="true" signature="310:332" ph="select * fro... document" />
             <marker date="1508067956565" expanded="true" signature="442:569" ph="insert into document... " />
@@ -724,15 +662,7 @@
     <entry file="file://$PROJECT_DIR$/../MyProject/src/main/webapp/view/documentquery.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
-          <caret line="59" column="106" lean-forward="true" selection-start-line="59" selection-start-column="106" selection-end-line="59" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="73" column="65" lean-forward="true" selection-start-line="73" selection-start-column="65" selection-end-line="73" selection-end-column="65" />
+          <caret line="59" column="106" lean-forward="false" selection-start-line="59" selection-start-column="106" selection-end-line="59" selection-end-column="106" />
           <folding />
         </state>
       </provider>
@@ -740,15 +670,65 @@
     <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/DocumentController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
-          <caret line="77" column="82" lean-forward="true" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
+          <caret line="77" column="82" lean-forward="false" selection-start-line="77" selection-start-column="82" selection-end-line="77" selection-end-column="82" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../MyProject/src/main/webapp/view/main.jsp">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="165" column="0" lean-forward="false" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
-          <caret line="144" column="33" lean-forward="true" selection-start-line="144" selection-start-column="33" selection-end-line="144" selection-end-column="33" />
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/model/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/webapp/view/userquery.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="64" column="62" lean-forward="true" selection-start-line="64" selection-start-column="62" selection-end-line="64" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/webapp/view/employeequery.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="63" column="60" lean-forward="false" selection-start-line="63" selection-start-column="60" selection-end-line="63" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MyProject/src/main/java/com/hhit/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="99" column="40" lean-forward="true" selection-start-line="99" selection-start-column="40" selection-end-line="99" selection-end-column="40" />
           <folding />
         </state>
       </provider>

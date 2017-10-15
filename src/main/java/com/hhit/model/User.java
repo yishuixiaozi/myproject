@@ -1,5 +1,7 @@
 package com.hhit.model;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class User {
@@ -8,6 +10,7 @@ public class User {
     private String loginname;
     private String password;
     private int status;
+    @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date createDate;
 
     public User(){
