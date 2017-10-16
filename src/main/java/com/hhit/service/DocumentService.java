@@ -7,4 +7,6 @@ import java.util.List;
 public interface DocumentService {
     void addDocument(Document document);
     List<Document> documentSearchall();
+
+    void deletedocument(int id);
 }

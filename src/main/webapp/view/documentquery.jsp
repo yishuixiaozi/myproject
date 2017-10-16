@@ -48,6 +48,7 @@
                                 <th>上传日期</th>
                                 <th>上传者</th>
                                 <th>↓下载↓</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -63,6 +64,9 @@
                                     <td><a style="color: #5eb95e" href="/doucument/download.action?filename=${document.filename}">
                                             下载
                                     </a></td>
+                                    <td><a href="/doucument/deletedocument.action?
+                                    path=${document.filepath}&filename=${document.filename}&id=${document.id}">
+                                        删除</a> </td>
                                 </tr>
                             </c:forEach>
                             </tbody>

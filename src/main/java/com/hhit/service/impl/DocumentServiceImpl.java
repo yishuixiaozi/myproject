@@ -22,4 +22,9 @@ public class DocumentServiceImpl implements DocumentService {
     public List<Document> documentSearchall() {
         return documentDao.documentSearchall();
     }
+
+    @Override
+    public void deletedocument(int id) {
+        documentDao.deletedocument(id);
+    }
 }

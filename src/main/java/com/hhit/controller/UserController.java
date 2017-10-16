@@ -109,6 +109,7 @@ public class UserController {
         int id=Integer.valueOf(request.getParameter("id"));
         userservice.deleteuser(id);
         System.out.println("删除成功");
+
         return "redirect:/user/userquery.action";
     }
 

@@ -11,6 +11,10 @@
         insert into document(title,filename,remark,filepath,upuser)
         value(#{title},#{filename},#{remark},#{filepath},#{upuser})
     </insert>
+
+    <delete id="deletedocument" parameterType="Int">
+        DELETE FROM document where id=#{id}
+    </delete>
    <!-- <select id="selectUser" resultType="com.hhit.model.User" parameterType="String">
         select * from user where username=#{username}
     </select>
