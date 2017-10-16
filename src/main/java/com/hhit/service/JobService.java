@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface JobService {
     List<Job> jobSearchall();
+
+    void deletejob(int id);
 }

@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 @Controller
 @RequestMapping(value="/dept")
@@ -22,5 +23,18 @@ public class DeptController {
         deptlist=deptService.deptSearchall();
         modelMap.addAttribute("deptlist",deptlist);
         return "deptquery";
+    }
+
+    /**
+     * 删除职位
+     * @param request
+     * @return
+     */
+    @RequestMapping(value="/deletedept")
+    public String deletedept1(HttpServletRequest request){
+        System.out.println("111111111职位删除");
+        int id=Integer.valueOf(request.getParameter("id"));
+        deptService.deletedept(id);
+        return "redirect:/dept/deptquery.action";
     }
 }

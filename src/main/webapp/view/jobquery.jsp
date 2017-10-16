@@ -49,6 +49,7 @@
                                 <th>序号</th>
                                 <th>工作名称</th>
                                 <th>描述</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -57,6 +58,7 @@
                                     <td>${job.id}</td>
                                     <td>${job.name}</td>
                                     <td>${job.remark}</td>
+                                    <td><a href="/job/deletejob.action?id=${job.id}" style="color: #0e90d2">删除</a> </td>
                                 </tr>
                             </c:forEach>
                             </tbody>

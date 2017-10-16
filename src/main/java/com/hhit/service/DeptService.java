@@ -5,4 +5,6 @@ import java.util.List;
 public interface DeptService {
     //查询用户集合
     List<Dept> deptSearchall();
+
+    void deletedept(int id);
 }

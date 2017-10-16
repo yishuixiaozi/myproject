@@ -49,6 +49,7 @@
                                 <th>序号</th>
                                 <th>部门名称</th>
                                 <th>描述</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -57,6 +58,7 @@
                                     <td>${dept.id}</td>
                                     <td>${dept.name}</td>
                                     <td>${dept.remark}</td>
+                                    <td><a href="/dept/deletedept.action?id=${dept.id}" style="color: #0e90d2">删除</a></td>
                                 </tr>
                             </c:forEach>
                             </tbody>

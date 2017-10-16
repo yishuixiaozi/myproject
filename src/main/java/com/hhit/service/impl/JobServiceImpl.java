@@ -17,4 +17,9 @@ public class JobServiceImpl implements JobService {
     public List<Job> jobSearchall() {
         return jobDao.jobSearchall();
     }
+
+    @Override
+    public void deletejob(int id) {
+        jobDao.deletejob(id);
+    }
 }

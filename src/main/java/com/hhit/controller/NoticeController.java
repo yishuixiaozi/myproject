@@ -7,6 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -26,5 +27,12 @@ public class NoticeController {
         noticelist=noticeService.noticeSearchall();
         modelMap.addAttribute("noticelist",noticelist);
         return "noticequery";
+    }
+
+    @RequestMapping(value="/deletenotice")
+    public String deletenotice(HttpServletRequest request){
+        int id=Integer.valueOf(request.getParameter("id"));
+        noticeService.deletenotice(id);
+        return "redirect:/notice/noticequery.action";
     }
 }

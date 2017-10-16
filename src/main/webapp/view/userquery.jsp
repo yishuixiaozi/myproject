@@ -63,7 +63,8 @@
                                     <td>${user.status}</td>
                                     <td><spring:eval expression="user.createDate"></spring:eval></td>
                                     <td>${user.loginname}</td>
-                                    <td><a href="/user/deleteuser.action?id=${user.id}">删除</a></td>
+                                    <td><a href="/user/deleteuser.action?id=${user.id}"
+                                    style="color: #0e90d2">删除</a></td>
                                 </tr>
                             </c:forEach>
                             </tbody>

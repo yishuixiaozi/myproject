@@ -15,4 +15,6 @@ public interface UserService {
     void updatepass(User user);
     //查询用户集合
     List<User> userSearchall();
+    //依据ID删除用户
+    void deleteuser(int id);
 }

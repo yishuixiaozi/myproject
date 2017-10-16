@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface EmployeeDao {
     List<Employee> employeeSearchall();
+
+    void deleteempoyee(int id);
 }

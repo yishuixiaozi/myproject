@@ -16,4 +16,9 @@ public class NoticeServiceImpl implements NoticeService {
     public List<Notice> noticeSearchall() {
         return noticeDao.noticeSearchall();
     }
+
+    @Override
+    public void deletenotice(int id) {
+        noticeDao.deletenotice(id);
+    }
 }

@@ -97,10 +97,19 @@ public class UserController {
         return "userquery";
     }
 
+    /**
+     * 处理数据删除
+     * @param request
+     * @return
+     * @throws Exception
+     */
     @RequestMapping(value="/deleteuser")
     public String deleteuser(HttpServletRequest request) throws Exception{
         System.out.println("id参数值获取"+request.getParameter("id"));
-        return "1";
+        int id=Integer.valueOf(request.getParameter("id"));
+        userservice.deleteuser(id);
+        System.out.println("删除成功");
+        return "redirect:/user/userquery.action";
     }
 
 

@@ -82,10 +82,10 @@ public class DocumentController {
             //下面开始数据库的信息操作
             HttpSession session=request.getSession();
             String username=(String)session.getAttribute("username");
-            System.out.println("111111111111"+username);
+            //System.out.println("111111111111"+username);
             document.setUpuser(username);
             documentService.addDocument(document);
-            System.out.println("添加成功");
+            //System.out.println("添加成功");
             model.addAttribute("document",document);
             return "redirect:/doucument/documentquery.action";
         }else{

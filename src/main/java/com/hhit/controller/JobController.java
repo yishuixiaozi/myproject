@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Controller
@@ -25,5 +26,17 @@ public class JobController {
         joblist=jobserivce.jobSearchall();
         modelMap.addAttribute("joblist",joblist);
         return "jobquery";
+    }
+
+    /**
+     * 职位的删除
+     * @param request
+     * @return
+     */
+    @RequestMapping(value="/deletejob")
+    public String jobdelete(HttpServletRequest request){
+        int id=Integer.valueOf(request.getParameter("id"));
+        jobserivce.deletejob(id);
+        return "redirect:/job/jobquery.action";
     }
 }

@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface NoticeService {
     List<Notice> noticeSearchall();
+
+    void deletenotice(int id);
 }

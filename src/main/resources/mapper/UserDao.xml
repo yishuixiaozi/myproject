@@ -23,6 +23,9 @@
         select * from user
     </select>
 
+    <delete id="deleteuser" parameterType="Int">
+        delete from user where id=#{id}
+    </delete>
 
    <!-- <select id="selectUser" resultType="com.hhit.model.User" parameterType="String">
         select * from user where username=#{username}

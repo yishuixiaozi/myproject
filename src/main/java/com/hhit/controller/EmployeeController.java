@@ -7,6 +7,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -32,5 +33,12 @@ public class EmployeeController {
         modelMap.addAttribute("employeelist",employeelist);
         return "employeequery";
 
+    }
+
+    @RequestMapping(value="/deleteemployee")
+    public String deleteemp(HttpServletRequest request){
+        int id=Integer.valueOf(request.getParameter("id"));
+        employeeService.deleteemployee(id);
+        return "redirect:/employee/employeequery.action";
     }
 }

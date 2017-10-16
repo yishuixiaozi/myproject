@@ -6,4 +6,8 @@
     <select id="jobSearchall" resultType="com.hhit.model.Job" >
         select * from job
     </select>
+
+    <delete id="deletejob" parameterType="Int">
+        DELETE FROM job where id=#{id}
+    </delete>
 </mapper>

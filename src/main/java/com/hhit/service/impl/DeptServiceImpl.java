@@ -16,4 +16,9 @@ public class DeptServiceImpl implements DeptService {
     public List<Dept> deptSearchall() {
         return deptDao.deptSearchall();
     }
+
+    @Override
+    public void deletedept(int id) {
+        deptDao.deletedept(id);
+    }
 }

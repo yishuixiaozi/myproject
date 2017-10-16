@@ -50,6 +50,7 @@
                                 <th>性别</th>
                                 <th>学历</th>
                                 <th>创建时间</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -64,6 +65,8 @@
                                     <td>${employee.sex}</td>
                                     <td>${employee.education}</td>
                                     <td><spring:eval expression="employee.createdate"></spring:eval></td>
+                                    <td><a href="/employee/deleteemployee.action?id=${employee.id}"
+                                           style="color: #0e90d2">删除</a></td>
                                   <%--  <td>${employee.createdate}</td>--%>
                                 </tr>
                             </c:forEach>

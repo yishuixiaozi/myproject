@@ -6,4 +6,9 @@
     <select id="noticeSearchall" resultType="com.hhit.model.Notice" >
         select * from notice
     </select>
+
+    <delete id="deletenotice" parameterType="Int">
+        DELETE FROM notice where id=#{id}
+    </delete>
+
 </mapper>

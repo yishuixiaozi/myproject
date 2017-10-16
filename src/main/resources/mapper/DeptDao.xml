@@ -3,23 +3,11 @@
 
 <!-- 设置为IUserDao接口方法提供sql语句配置 -->
 <mapper namespace="com.hhit.dao.DeptDao">
-   <!--<select id="selectByusername" resultType="com.hhit.model.User" parameterType="String">
-      select * from user where username=#{username}
-   </select>
-
-   <select id="selectLogin" resultType="com.hhit.model.User" parameterType="String">
-      select * from user where username=#{username}
-   </select>
-
-    <select id="selectlogin" resultType="com.hhit.model.User" parameterType="com.hhit.model.User">
-        select * from user where username=#{username} and password=#{password}
-    </select>
-
-    <update id="updatepass" parameterType="com.hhit.model.User">
-        UPDATE user set password=#{password} where username=#{username}
-    </update>-->
-
     <select id="deptSearchall" resultType="com.hhit.model.Dept" >
         select * from dept
     </select>
+
+    <delete id="deletedept" parameterType="Int">
+        DELETE FROM dept where id=#{id}
+    </delete>
 </mapper>

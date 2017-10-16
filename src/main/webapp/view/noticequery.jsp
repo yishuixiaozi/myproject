@@ -51,6 +51,7 @@
                                 <th>标题</th>
                                 <th>内容</th>
                                 <th>创建日期</th>
+                                <th>操作</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -60,6 +61,8 @@
                                     <td>${notice.title}</td>
                                     <td>${notice.content}</td>
                                     <td><spring:eval expression="notice.create_date"></spring:eval></td>
+                                    <td><a href="/notice/deletenotice.action?id=${notice.id}"
+                                    style="color: #0e90d2">删除</a> </td>
                                 </tr>
                             </c:forEach>
                             </tbody>
