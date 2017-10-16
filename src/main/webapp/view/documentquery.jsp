@@ -64,8 +64,7 @@
                                     <td><a style="color: #5eb95e" href="/doucument/download.action?filename=${document.filename}">
                                             下载
                                     </a></td>
-                                    <td><a href="/doucument/deletedocument.action?
-                                    path=${document.filepath}&filename=${document.filename}&id=${document.id}">
+                                    <td><a href="/doucument/deletedocument.action?id=${document.id}&filename=${document.filename}">
                                         删除</a> </td>
                                 </tr>
                             </c:forEach>

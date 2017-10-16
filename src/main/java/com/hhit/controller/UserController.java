@@ -113,5 +113,21 @@ public class UserController {
         return "redirect:/user/userquery.action";
     }
 
+    /**
+     * 多选删除功能实现
+     * @param request
+     * @return
+     */
+    @RequestMapping(value="/deletemore")
+    public String deletemore(HttpServletRequest request){
+        String[] userid=request.getParameterValues("selectname");
+        if(userid.length>0){
+            for(int i=0;i<userid.length;i++){
+                userservice.deleteuser(Integer.parseInt(userid[i]));
+            }
+        }
+        return "redirect:/user/userquery.action";
+    }
+
 
 }

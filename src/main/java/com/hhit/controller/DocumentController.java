@@ -132,15 +132,28 @@ public class DocumentController {
 
     @RequestMapping(value="/deletedocument")
     public String deletedocument(HttpServletRequest request){
-        //File file=new File("D:\\MyProject\\target\\HomeDecoration\\images\\推荐书籍7.txt");
-        File file=new File(request.getParameter("path")+"/"+request.getParameter("filename"));
-        System.out.println("看看输出的文件路径"+request.getParameter("path")+"/"+request.getParameter("filename"));
         int id=Integer.valueOf(request.getParameter("id"));
+        String path=request.getServletContext().getRealPath("/images/");
+        File file=new File(path+request.getParameter("filename"));
         if (file.exists()&&file.isFile())
         {
             file.delete();
             documentService.deletedocument(id);
         }
-        return "redirect:/doucument/deletedocument.action";
+        return "redirect:/doucument/documentquery.action";
+    }
+
+    /**
+     * 文档测试所用
+     * @param request
+     */
+    @RequestMapping(value = "/test")
+    public void del(HttpServletRequest request){
+        String path=request.getServletContext().getRealPath("/images/");
+        System.out.println("path值得测试"+path);
+        String s=path+"推荐书籍.txt";
+        System.out.println("s值"+s);
+        File file=new File(s);
+        file.delete();
     }
 }

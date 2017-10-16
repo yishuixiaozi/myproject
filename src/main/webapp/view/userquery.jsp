@@ -5,12 +5,10 @@
     String path = request.getContextPath();
     String basePath = request.getScheme() + "://" + request.getServerName() + ":" + request.getServerPort() + path + "/";
 %>
-
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
     <base href="<%=basePath%>">
-
     <title>My JSP 'index.jsp' starting page</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
@@ -44,6 +42,7 @@
                         <h5>用户信息显示</h5>
                     </div>
                     <div class="widget-content nopadding">
+                        <form action="/user/deletemore.action" method="post">
                         <table class="table table-bordered data-table">
                             <thead>
                             <tr>
@@ -58,7 +57,7 @@
                             <tbody>
                             <c:forEach var="user" items="${userlist}">
                                 <tr class="gradeX">
-                                    <td><input name="selectname" type="checkbox" value=""/></td>
+                                    <td><input name="selectname" type="checkbox" value="${user.id}"/></td>
                                     <td>${user.username}</td>
                                     <td>${user.status}</td>
                                     <td><spring:eval expression="user.createDate"></spring:eval></td>
@@ -69,6 +68,8 @@
                             </c:forEach>
                             </tbody>
                         </table>
+                            <input type="submit" value="多选删除" style="color: #A1A1A1;border-radius: 15px;">
+                        </form>
                     </div>
                 </div>
             </div>

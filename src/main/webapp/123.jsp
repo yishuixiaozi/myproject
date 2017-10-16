@@ -19,8 +19,14 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	-->
 </head>
-
+    <form action="/user/deletemore.action" method="post">
+        <input type="checkbox" name="select" value="fjwiof">
+        <input type="checkbox" name="select" value="fwef">
+        <input type="checkbox" name="select" value="sdfsd">
+        <input type="checkbox" name="select" value="fewfwe">
+        <input type="submit" value="提交">
+    </form>
 <body>
-index.jsp
+
 </body>
 </html>
