@@ -15,4 +15,10 @@
         insert into employee(name,address,cardid,phone,email,sex,education,job_id,dept_id)
         values(#{name},#{address},#{cardid},#{phone},#{email},#{sex},#{education},#{job_id},#{dept_id})
     </insert>
+
+    <update id="updateemployee" parameterType="com.hhit.model.Employee">
+        update employee set name=#{name},address=#{address},cardid=#{cardid},phone=#{phone},email=#{email},
+        sex=#{sex},education=#{education},job_id=#{job_id},dept_id=#{dept_id}
+        where id=#{id}
+    </update>
 </mapper>

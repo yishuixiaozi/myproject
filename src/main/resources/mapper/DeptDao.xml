@@ -14,4 +14,8 @@
     <insert id="adddept" parameterType="com.hhit.model.Dept">
         insert into dept(name,remark) values(#{name},#{remark})
     </insert>
+
+    <update id="updatedept" parameterType="com.hhit.model.Dept">
+        update dept set name=#{name},remark=#{remark} where id=#{id}
+    </update>
 </mapper>

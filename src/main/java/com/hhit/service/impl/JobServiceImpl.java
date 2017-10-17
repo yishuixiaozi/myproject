@@ -27,4 +27,9 @@ public class JobServiceImpl implements JobService {
     public void addjob(Job job) {
         jobDao.addjob(job);
     }
+
+    @Override
+    public void update(Job job) {
+        jobDao.updatejob(job);
+    }
 }

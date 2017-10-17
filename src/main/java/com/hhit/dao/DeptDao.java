@@ -7,4 +7,6 @@ public interface DeptDao {
     void deletedept(int id);
 
     void adddept(Dept dept);
+
+    void updatedept(Dept dept);
 }

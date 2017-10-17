@@ -58,7 +58,10 @@
                                     <td>${dept.id}</td>
                                     <td>${dept.name}</td>
                                     <td>${dept.remark}</td>
-                                    <td><a href="/dept/deletedept.action?id=${dept.id}" style="color: #0e90d2">删除</a></td>
+                                    <td><a href="/dept/deletedept.action?id=${dept.id}" style="color: #0e90d2">删除</a>|
+                                        <a href="view/updatedept.jsp?id=${dept.id}&name=${dept.name}&remark=${dept.remark}"
+                                           style="color: #0e90d2">修改</a>
+                                    </td>
                                 </tr>
                             </c:forEach>
                             </tbody>

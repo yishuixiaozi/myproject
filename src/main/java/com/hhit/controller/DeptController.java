@@ -48,4 +48,17 @@ public class DeptController {
         deptService.adddept(dept);
         return "redirect:/dept/deptquery.action";
     }
+
+    /**
+     * 修改部门
+     * @param dept
+     * @return
+     */
+    @RequestMapping(value="/updatedept")
+    public String updatedept(Dept dept){
+        deptService.updatedept(dept);
+        return "redirect:/dept/deptquery.action";
+    }
+
+
 }

@@ -19,5 +19,7 @@ public interface UserService {
     void deleteuser(int id);
     //添加用户
     void adduser(User user);
+    //修改用户
+    void updateuser(User user);
 
 }

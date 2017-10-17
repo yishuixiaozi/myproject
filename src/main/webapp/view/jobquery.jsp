@@ -58,7 +58,10 @@
                                     <td>${job.id}</td>
                                     <td>${job.name}</td>
                                     <td>${job.remark}</td>
-                                    <td><a href="/job/deletejob.action?id=${job.id}" style="color: #0e90d2">删除</a> </td>
+                                    <td><a href="/job/deletejob.action?id=${job.id}" style="color: #0e90d2">删除</a> |
+                                    <a href="view/updatejob.jsp?id=${job.id}&name=${job.name}&remark=${job.remark}"
+                                       style="color: #0e90d2">修改</a>
+                                    </td>
                                 </tr>
                             </c:forEach>
                             </tbody>

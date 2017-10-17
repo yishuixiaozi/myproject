@@ -12,4 +12,8 @@
     <insert id="addjob" parameterType="com.hhit.model.Job">
         insert into job(name,remark) values(#{name},#{remark})
     </insert>
+
+    <update id="updatejob" parameterType="com.hhit.model.Job">
+        update job set name=#{name},remark=#{remark} where id=#{id}
+    </update>
 </mapper>

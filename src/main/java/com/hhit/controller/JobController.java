@@ -39,10 +39,25 @@ public class JobController {
         jobserivce.deletejob(id);
         return "redirect:/job/jobquery.action";
     }
-
+    /**
+     * 添加职位
+     * @param job
+     * @return
+     */
     @RequestMapping(value="/addjob")
     public String addjob(Job job){
         jobserivce.addjob(job);
+        return "redirect:/job/jobquery.action";
+    }
+
+    /**
+     * 修改工作
+     * @param job
+     * @return
+     */
+    @RequestMapping(value="/updatejob")
+    public String updatejob(Job job){
+        jobserivce.update(job);
         return "redirect:/job/jobquery.action";
     }
 }

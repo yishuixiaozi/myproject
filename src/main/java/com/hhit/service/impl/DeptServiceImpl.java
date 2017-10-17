@@ -26,4 +26,9 @@ public class DeptServiceImpl implements DeptService {
     public void adddept(Dept dept) {
         deptDao.adddept(dept);
     }
+
+    @Override
+    public void updatedept(Dept dept) {
+        deptDao.updatedept(dept);
+    }
 }

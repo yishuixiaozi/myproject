@@ -66,8 +66,14 @@
                                     <td>${employee.education}</td>
                                     <td><spring:eval expression="employee.createdate"></spring:eval></td>
                                     <td><a href="/employee/deleteemployee.action?id=${employee.id}"
-                                           style="color: #0e90d2">删除</a></td>
-                                  <%--  <td>${employee.createdate}</td>--%>
+                                           style="color: #0e90d2">删除</a>
+                                    <a href="view/updateemployee.jsp?id=${employee.id}&name=${employee.name}
+                                    &cardid=${employee.cardid}&address=${employee.address}&phone=${employee.phone}
+                                    &email=${employee.email}&education=${employee.education}"
+                                       style="color: #0e90d2">修改</a>
+                                    </td>
+                                  <%--  &address=${employee.address}&phone=${employee.phone}&
+                                    email=${employee.email}&education=${employee.education}<td>${employee.createdate}</td>--%>
                                 </tr>
                             </c:forEach>
                             </tbody>

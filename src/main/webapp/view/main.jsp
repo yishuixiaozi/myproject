@@ -99,7 +99,6 @@
             <ul>
                 <li><a class="menu_a" link="view/adddept.jsp"><i class="icon icon-caret-right"></i> 添加部门</a></li>
                 <li><a class="menu_a" link="/dept/deptquery.action"><i class="icon icon-caret-right"></i>查询部门</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改部门</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -110,7 +109,6 @@
             <ul>
                 <li><a class="menu_a" link="view/addjob.jsp"><i class="icon icon-caret-right"></i>添加职位</a></li>
                 <li><a class="menu_a" link="/job/jobquery.action"><i class="icon icon-caret-right"></i>查询职位</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改职位</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -121,7 +119,6 @@
             <ul>
                 <li><a class="menu_a" link="view/addemployee.jsp"><i class="icon icon-caret-right"></i>添加员工</a></li>
                 <li><a class="menu_a" link="/employee/employeequery.action"><i class="icon icon-caret-right"></i>员工查询</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改员工</a></li>
             </ul>
         </li>
         <li class="submenu">
@@ -132,7 +129,6 @@
             <ul>
                 <li><a class="menu_a" link="view/addnotice.jsp"><i class="icon icon-caret-right"></i> 添加公告</a></li>
                 <li><a class="menu_a" link="/notice/noticequery.action"><i class="icon icon-caret-right"></i>公告查询</a></li>
-                <li><a class="menu_a" link="#"><i class="icon icon-caret-right"></i>修改公告</a></li>
             </ul>
         </li>
         <li class="submenu">

@@ -130,10 +130,27 @@ public class UserController {
         return "redirect:/user/userquery.action";
     }
 
+    /**
+     * 添加用户
+     * @param user1
+     * @return
+     */
     @RequestMapping(value="/adduser")
     public String adduser(User user1){
        //直接获取页面的传过来的对象进行值得添加
         userservice.adduser(user1);
+        return "redirect:/user/userquery.action";
+    }
+
+    /**
+     * 修改用户信息
+     * @param user1
+     * @return
+     */
+    @RequestMapping(value="/updateuser")
+    public String updateuser(User user1){
+        System.out.println("这个地方获得ID的值看看"+user1.getId());
+        userservice.updateuser(user1);
         return "redirect:/user/userquery.action";
     }
 
