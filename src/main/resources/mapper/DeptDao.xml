@@ -10,4 +10,8 @@
     <delete id="deletedept" parameterType="Int">
         DELETE FROM dept where id=#{id}
     </delete>
+
+    <insert id="adddept" parameterType="com.hhit.model.Dept">
+        insert into dept(name,remark) values(#{name},#{remark})
+    </insert>
 </mapper>

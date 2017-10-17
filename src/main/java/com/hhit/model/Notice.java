@@ -14,6 +14,10 @@ public class Notice {
     //1、需要加载相应的包，joda-time 包，2、并且需要在页面内加上
     // <%@taglib prefix="spring" uri="http://www.springframework.org/tags" %>
     private Date create_date;
+
+    private int user_id;
+
+
     //无参构造器
     public Notice(){
         super();
@@ -57,6 +61,14 @@ public class Notice {
 
     public void setCreate_date(Date create_date) {
         this.create_date = create_date;
+    }
+
+    public int getUser_id() {
+        return user_id;
+    }
+
+    public void setUser_id(int user_id) {
+        this.user_id = user_id;
     }
 }
 

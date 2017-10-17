@@ -8,4 +8,6 @@ public interface EmployeeDao {
     List<Employee> employeeSearchall();
 
     void deleteempoyee(int id);
+
+    void addemployee(Employee employee);
 }

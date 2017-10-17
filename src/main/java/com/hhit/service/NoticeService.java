@@ -8,4 +8,6 @@ public interface NoticeService {
     List<Notice> noticeSearchall();
 
     void deletenotice(int id);
+
+    void addnotice(Notice notice);
 }

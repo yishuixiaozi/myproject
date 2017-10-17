@@ -5,4 +5,6 @@ public interface NoticeDao {
     List<Notice> noticeSearchall();
 
     void deletenotice(int id);
+
+    void addnotice(Notice notice);
 }

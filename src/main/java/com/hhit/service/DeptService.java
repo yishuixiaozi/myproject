@@ -7,4 +7,6 @@ public interface DeptService {
     List<Dept> deptSearchall();
 
     void deletedept(int id);
+
+    void adddept(Dept dept);
 }

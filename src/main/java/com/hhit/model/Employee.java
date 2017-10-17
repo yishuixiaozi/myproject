@@ -16,6 +16,11 @@ public class Employee {
     private String email;
     private String sex;
     private String education;
+    private int job_id;
+    private int dept_id;
+    private String jobid;
+    private String deptid;
+
 
     @DateTimeFormat(pattern="yyyy-MM-dd HH:mm:ss")
     private Date bithday;
@@ -130,5 +135,37 @@ public class Employee {
 
     public void setCreatedate(Date createdate) {
         this.createdate = createdate;
+    }
+
+    public int getJob_id() {
+        return job_id;
+    }
+
+    public void setJob_id(int job_id) {
+        this.job_id = job_id;
+    }
+
+    public int getDept_id() {
+        return dept_id;
+    }
+
+    public void setDept_id(int dept_id) {
+        this.dept_id = dept_id;
+    }
+
+    public String getJobid() {
+        return jobid;
+    }
+
+    public void setJobid(String jobid) {
+        this.jobid = jobid;
+    }
+
+    public String getDeptid() {
+        return deptid;
+    }
+
+    public void setDeptid(String deptid) {
+        this.deptid = deptid;
     }
 }

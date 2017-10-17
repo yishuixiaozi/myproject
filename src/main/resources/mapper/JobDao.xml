@@ -6,8 +6,10 @@
     <select id="jobSearchall" resultType="com.hhit.model.Job" >
         select * from job
     </select>
-
     <delete id="deletejob" parameterType="Int">
         DELETE FROM job where id=#{id}
     </delete>
+    <insert id="addjob" parameterType="com.hhit.model.Job">
+        insert into job(name,remark) values(#{name},#{remark})
+    </insert>
 </mapper>

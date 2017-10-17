@@ -17,4 +17,7 @@ public interface UserService {
     List<User> userSearchall();
     //依据ID删除用户
     void deleteuser(int id);
+    //添加用户
+    void adduser(User user);
+
 }

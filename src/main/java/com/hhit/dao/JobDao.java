@@ -5,4 +5,6 @@ public interface JobDao {
     List<Job> jobSearchall();
 
     void deletejob(int id);
+
+    void addjob(Job job);
 }

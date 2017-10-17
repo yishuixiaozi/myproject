@@ -35,10 +35,28 @@ public class EmployeeController {
 
     }
 
+    /**
+     * 员工的删除
+     * @param request
+     * @return
+     */
     @RequestMapping(value="/deleteemployee")
     public String deleteemp(HttpServletRequest request){
         int id=Integer.valueOf(request.getParameter("id"));
         employeeService.deleteemployee(id);
+        return "redirect:/employee/employeequery.action";
+    }
+
+    @RequestMapping(value="/addemp")
+    public String addemp(Employee employee){
+        System.out.println("获取jobid"+employee.getJobid());
+        System.out.println("获取部门dept_id"+employee.getDeptid());
+        System.out.println("获取性别"+employee.getSex());
+        int job_id=Integer.parseInt(employee.getJobid());
+        int dept_id=Integer.parseInt(employee.getDeptid());
+        employee.setJob_id(job_id);
+        employee.setDept_id(dept_id);
+        employeeService.addemployee(employee);
         return "redirect:/employee/employeequery.action";
     }
 }

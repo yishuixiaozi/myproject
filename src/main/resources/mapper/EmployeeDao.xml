@@ -10,4 +10,9 @@
     <delete id="deleteempoyee" parameterType="Int">
         DELETE from employee where id=#{id}
     </delete>
+
+    <insert id="addemployee" parameterType="com.hhit.model.Employee">
+        insert into employee(name,address,cardid,phone,email,sex,education,job_id,dept_id)
+        values(#{name},#{address},#{cardid},#{phone},#{email},#{sex},#{education},#{job_id},#{dept_id})
+    </insert>
 </mapper>

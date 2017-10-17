@@ -22,4 +22,9 @@ public class JobServiceImpl implements JobService {
     public void deletejob(int id) {
         jobDao.deletejob(id);
     }
+
+    @Override
+    public void addjob(Job job) {
+        jobDao.addjob(job);
+    }
 }

@@ -37,4 +37,15 @@ public class DeptController {
         deptService.deletedept(id);
         return "redirect:/dept/deptquery.action";
     }
+
+    /**
+     * 部门添加
+     * @param dept
+     * @return
+     */
+    @RequestMapping(value="/adddept")
+    public String adddept(Dept dept){
+        deptService.adddept(dept);
+        return "redirect:/dept/deptquery.action";
+    }
 }

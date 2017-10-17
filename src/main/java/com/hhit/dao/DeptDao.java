@@ -5,4 +5,6 @@ public interface DeptDao {
     List<Dept> deptSearchall();//查询所用用户表信息
 
     void deletedept(int id);
+
+    void adddept(Dept dept);
 }

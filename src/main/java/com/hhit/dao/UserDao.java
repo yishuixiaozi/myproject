@@ -11,4 +11,5 @@ public interface UserDao {
     void updatepass(User user);//用户密码修改
     List<User> userSearchall();//查询所用用户表信息
     void deleteuser(int id);//依据ID删除用户
+    void adduser(User user);
 }

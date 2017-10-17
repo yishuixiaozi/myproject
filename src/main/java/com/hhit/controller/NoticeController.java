@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -29,10 +30,30 @@ public class NoticeController {
         return "noticequery";
     }
 
+    /**
+     * 公告删除
+     * @param request
+     * @return
+     */
     @RequestMapping(value="/deletenotice")
     public String deletenotice(HttpServletRequest request){
         int id=Integer.valueOf(request.getParameter("id"));
         noticeService.deletenotice(id);
+        return "redirect:/notice/noticequery.action";
+    }
+
+    /**
+     * 公告添加
+     * @param notice
+     * @param request
+     * @return
+     */
+    @RequestMapping(value="/addnotice")
+    public String addnotice(Notice notice,HttpServletRequest request){
+        HttpSession session=request.getSession();
+        int user_id=Integer.parseInt(String.valueOf(session.getAttribute("user_id")));
+        notice.setUser_id(user_id);
+        noticeService.addnotice(notice);
         return "redirect:/notice/noticequery.action";
     }
 }

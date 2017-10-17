@@ -51,6 +51,7 @@ public class UserController {
             session=request.getSession();
             session.setAttribute("username",user2.getUsername());
             session.setAttribute("loginname",user2.getLoginname());
+            session.setAttribute("user_id",user2.getId());
             if(user1.getPassword().equals(user2.getPassword())){
                 msg="right";
             }
@@ -126,6 +127,13 @@ public class UserController {
                 userservice.deleteuser(Integer.parseInt(userid[i]));
             }
         }
+        return "redirect:/user/userquery.action";
+    }
+
+    @RequestMapping(value="/adduser")
+    public String adduser(User user1){
+       //直接获取页面的传过来的对象进行值得添加
+        userservice.adduser(user1);
         return "redirect:/user/userquery.action";
     }
 

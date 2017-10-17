@@ -21,4 +21,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     public void deleteemployee(int id) {
         employeeDao.deleteempoyee(id);
     }
+
+    @Override
+    public void addemployee(Employee employee) {
+        employeeDao.addemployee(employee);
+    }
 }

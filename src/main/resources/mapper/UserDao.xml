@@ -27,6 +27,10 @@
         delete from user where id=#{id}
     </delete>
 
+    <insert id="adduser" parameterType="com.hhit.model.User">
+        insert into user(username,loginname,password) values(#{username},#{loginname},#{password})
+    </insert>
+
    <!-- <select id="selectUser" resultType="com.hhit.model.User" parameterType="String">
         select * from user where username=#{username}
     </select>

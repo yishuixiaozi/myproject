@@ -11,4 +11,8 @@
         DELETE FROM notice where id=#{id}
     </delete>
 
+    <insert id="addnotice" parameterType="com.hhit.model.Notice">
+        insert into notice(title,content,user_id) value(#{title},#{content},#{user_id})
+    </insert>
+
 </mapper>

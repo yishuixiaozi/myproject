@@ -39,4 +39,10 @@ public class JobController {
         jobserivce.deletejob(id);
         return "redirect:/job/jobquery.action";
     }
+
+    @RequestMapping(value="/addjob")
+    public String addjob(Job job){
+        jobserivce.addjob(job);
+        return "redirect:/job/jobquery.action";
+    }
 }
