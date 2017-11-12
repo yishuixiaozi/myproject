@@ -46,14 +46,14 @@
         <label for="firstname" class="col-sm-5 control-label">公告标题</label>
         <div class="col-sm-3">
             <input type="text" class="form-control" id="firstname" name="title"
-                   placeholder="请输入名字">
+                   placeholder="请输公告标题">
         </div>
     </div>
     <div class="form-group">
         <label for="firstname" class="col-sm-5 control-label">公告内容</label>
         <div class="col-sm-3">
             <input type="text" class="form-control" id="lasttname" name="content"
-                   placeholder="请输入名字">
+                   placeholder="请输公告内容">
         </div>
     </div>
 

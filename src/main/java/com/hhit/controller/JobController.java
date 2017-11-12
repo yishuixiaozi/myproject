@@ -6,6 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 
 @Controller
@@ -21,7 +22,11 @@ public class JobController {
      * @return
      */
     @RequestMapping(value="/jobquery")
-    public String jobsearch(ModelMap modelMap){
+    public String jobsearch(ModelMap modelMap,HttpServletRequest request){
+
+        HttpSession session=request.getSession();
+        String username=(String)session.getAttribute("username");
+        System.out.println("岗位查询里边获取"+username);
         List<Job> joblist;
         joblist=jobserivce.jobSearchall();
         modelMap.addAttribute("joblist",joblist);

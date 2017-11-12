@@ -46,14 +46,14 @@
         <label for="firstname" class="col-sm-5 control-label">职位名称</label>
         <div class="col-sm-3">
             <input type="text" class="form-control" id="firstname" name="name"
-                   placeholder="请输入名字">
+                   placeholder="请输入职位名称">
         </div>
     </div>
     <div class="form-group">
         <label for="firstname" class="col-sm-5 control-label">详细描述</label>
         <div class="col-sm-3">
             <input type="text" class="form-control" id="lasttname" name="remark"
-                   placeholder="请输入名字">
+                   placeholder="请输入职位描述">
         </div>
     </div>
 

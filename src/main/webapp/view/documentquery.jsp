@@ -46,7 +46,6 @@
                                 <th>文件名</th>
                                 <th>文件描述</th>
                                 <th>上传日期</th>
-                                <th>上传者</th>
                                 <th>↓下载↓</th>
                                 <th>操作</th>
                             </tr>
@@ -59,7 +58,6 @@
                                     <td>${document.filename}</td>
                                     <td>${document.remark}</td>
                                     <td><spring:eval expression="document.create_date"></spring:eval></td>
-                                    <td>${document.upuser}</td>
                                         <%--  <td>${employee.createdate}</td>--%>
                                     <td><a style="color: #5eb95e" href="/doucument/download.action?filename=${document.filename}">
                                             下载

@@ -23,7 +23,11 @@ public class NoticeController {
      * @return
      */
     @RequestMapping(value="/noticequery")
-    public String noticequery(ModelMap modelMap){
+    public String noticequery(ModelMap modelMap,HttpServletRequest request){
+
+        HttpSession session=request.getSession();
+        String username=(String)session.getAttribute("username");
+        System.out.println("公告查询里边获取session"+username);
         List<Notice> noticelist;
         noticelist=noticeService.noticeSearchall();
         modelMap.addAttribute("noticelist",noticelist);
@@ -51,8 +55,11 @@ public class NoticeController {
     @RequestMapping(value="/addnotice")
     public String addnotice(Notice notice,HttpServletRequest request){
         HttpSession session=request.getSession();
-        int user_id=Integer.parseInt(String.valueOf(session.getAttribute("user_id")));
-        notice.setUser_id(user_id);
+        System.out.println("session中的用户的id"+session.getAttribute("user_id"));
+        System.out.println("标题"+notice.getTitle());
+        System.out.println("内容"+notice.getContent());
+        //int user_id=Integer.parseInt(String.valueOf(session.getAttribute("user_id")));
+        //notice.setUser_id(user_id);
         noticeService.addnotice(notice);
         return "redirect:/notice/noticequery.action";
     }

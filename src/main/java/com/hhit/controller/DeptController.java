@@ -6,6 +6,7 @@ import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.List;
 @Controller
 @RequestMapping(value="/dept")
@@ -18,7 +19,11 @@ public class DeptController {
      * @return
      */
     @RequestMapping(value="/deptquery")
-    public String deptquery(ModelMap modelMap){
+    public String deptquery(ModelMap modelMap,HttpServletRequest request){
+
+        HttpSession session=request.getSession();
+        String username=(String)session.getAttribute("username");
+        System.out.println("string"+username);
         List<Dept> deptlist;
         deptlist=deptService.deptSearchall();
         modelMap.addAttribute("deptlist",deptlist);

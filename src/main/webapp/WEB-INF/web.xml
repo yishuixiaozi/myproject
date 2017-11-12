@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
   <!--http://www.w3.org/2001/XMLSchema-instance表示的是添加异步的库，servlet3.0支持这样的操作-->
-  <display-name>HomeDecoration</display-name>
-  <description>HomeDecoration_0.0.1</description>
+  <display-name>Myproject</display-name>
+  <description>Mypeoject1.1</description>
   <!--1、配置监听器，进行检查型错误，如果有就提示错误-->
   <!-- <listener>
        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
@@ -53,7 +53,7 @@
 
   <!--设置服务应用打开后的跳转页面-->
   <welcome-file-list>
-    <welcome-file>view/login.jsp</welcome-file>
+    <welcome-file>view/loginnew.jsp</welcome-file>
   </welcome-file-list>
 
 </web-app>

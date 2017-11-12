@@ -33,7 +33,8 @@
         <li  class="dropdown" id="profile-messages" >
             <a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle">
                 <i class="icon icon-user"></i>&nbsp;
-                <span class="text">欢迎你，${sessionScope.username}</span>&nbsp;
+                <span class="text">欢迎你${sessionScope.username}
+               </span>&nbsp;
                 <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
@@ -45,13 +46,13 @@
             </ul>
         </li>
         <li class="dropdown" id="menu-messages">
-            <a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+            <%--<a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
                 <i class="icon icon-envelope"></i>&nbsp;
                 <span class="text">我的消息</span>&nbsp;
                 <span class="label label-important">4</span>&nbsp;
                 <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
+            </a>--%>
+            <%--<ul class="dropdown-menu">
                 <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i> 新消息</a></li>
                 <li class="divider"></li>
                 <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i> 收件箱</a></li>
@@ -59,19 +60,19 @@
                 <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i> 发件箱</a></li>
                 <li class="divider"></li>
                 <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> 回收站</a></li>
-            </ul>
+            </ul>--%>
         </li>
-        <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">&nbsp;设置</span></a></li>
-        <li class=""><a title="" href="index.jsp"><i class="icon icon-share-alt"></i> <span class="text">&nbsp;退出系统</span></a></li>
+       <%-- <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">&nbsp;设置</span></a></li>--%>
+        <li class=""><a title="" href="#"><i class="icon icon-share-alt"></i> <span class="text">&nbsp;退出系统</span></a></li>
     </ul>
 </div>
 <!--close-top-Header-menu-->
 
 <!--start-top-serch-->
-<div id="search">
+<%--<div id="search">
     <input type="text" placeholder="搜索..." style="height: 30px"/>
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
-</div>
+</div>--%>
 <!--close-top-serch-->
 <!--sidebar-menu-->
 <div id="sidebar" style="OVERFLOW-Y: auto; OVERFLOW-X:hidden;">
@@ -83,7 +84,6 @@
             <a href="#">
                 <i class="icon icon-table"></i>
                 <span>用户管理</span>
-
             </a>
             <ul>
                 <li><a class="menu_a" id="yonghu"  link="/user/userquery.action"><i class="icon icon-caret-right"></i>用户查询</a></li>
@@ -144,7 +144,6 @@
     </ul>
 </div>
 <!--sidebar-menu-->
-
 <!--main-container-part-->
 <div id="content">
     <!--breadcrumbs-->
@@ -165,6 +164,7 @@
 <script type="text/javascript">
     $(document).ready(function(){
         var ident="<%=session.getAttribute("loginname")%>";
+       /*alert(ident)*/
         if(ident!="admin"){
             document.getElementById("yonghu").style.visibility="hidden";
             document.getElementById("yonghu").style.display="none";

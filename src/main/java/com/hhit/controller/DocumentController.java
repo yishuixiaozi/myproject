@@ -76,7 +76,7 @@ public class DocumentController {
             }
             //文件保存到目标文件中
             document.getFile().transferTo(new File(path+File.separator+filename));
-            System.out.println("看看get"+document.getFile());
+            //System.out.println("看看get"+document.getFile());
             document.setFilename(filename);//设置文件名
             document.setFilepath(path);//设置文件存储地方
             //下面开始数据库的信息操作
@@ -105,6 +105,7 @@ public class DocumentController {
                                            String filename,Model model) throws Exception{
         //下载文件的所在路径，至于下载到什么里边由浏览器默认配置
         String path=request.getServletContext().getRealPath("/images/");
+        System.out.println("获取path的值"+path);
         File file=new File(path+File.separator+filename);
         HttpHeaders headers=new HttpHeaders();
         //下载显示的文件名+解决中文乱码问题
@@ -133,11 +134,14 @@ public class DocumentController {
     @RequestMapping(value="/deletedocument")
     public String deletedocument(HttpServletRequest request){
         int id=Integer.valueOf(request.getParameter("id"));
+        //System.out.println("看看id值是什么"+id);
         String path=request.getServletContext().getRealPath("/images/");
+        //System.out.println("path="+path);
         File file=new File(path+request.getParameter("filename"));
         if (file.exists()&&file.isFile())
         {
             file.delete();
+            System.out.println("有没有到这一步呢");
             documentService.deletedocument(id);
         }
         return "redirect:/doucument/documentquery.action";

@@ -124,7 +124,7 @@
 
     <div class="form-group">
         <div class="col-sm-offset-5 col-sm-10">
-            <button type="submit" class="btn btn-default">添加</button>
+            <button type="submit" class="btn btn-default">确认修改</button>
             <button type="reset" class="btn btn-default">取消</button>
         </div>
     </div>
@@ -135,7 +135,6 @@
 <script type="text/javascript">
     var name="<%=request.getParameter("name")%>";
     var cardid="<%=request.getParameter("cardid")%>";
-    alert("身份证的值"+cardid);
     var address="<%=request.getParameter("address")%>";
     var phone="<%=request.getParameter("phone")%>";
     var email="<%=request.getParameter("email")%>";

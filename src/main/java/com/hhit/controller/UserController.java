@@ -51,6 +51,7 @@ public class UserController {
             session=request.getSession();
             session.setAttribute("username",user2.getUsername());
             session.setAttribute("loginname",user2.getLoginname());
+            System.out.println("获取session中的值"+request.getSession().getAttribute("username"));
             session.setAttribute("user_id",user2.getId());
             if(user1.getPassword().equals(user2.getPassword())){
                 msg="right";
@@ -85,6 +86,47 @@ public class UserController {
         }
         return map;
     }
+
+    /**
+     * 新的登陆控制跳转，处理部分登陆错误问题。
+     * @param request
+     * @return
+     * @throws Exception
+     */
+    @RequestMapping(value="/loginnew")
+    @ResponseBody
+    public Map<String,Object> loginnew(HttpServletRequest request) throws Exception{
+        Map<String,Object> map=new HashMap<String, Object>();
+        System.out.println("查看中文名"+request.getParameter("username"));
+        System.out.println("密码"+request.getParameter("password"));
+        if(request.getParameter("username")==null){
+            map.put("msg","wrong");
+        }
+        else{
+            User user2=new User();
+            user2=userservice.selectByusername(request.getParameter("username"));
+            if(user2==null){
+                //System.out.println("表示获取对象为空");
+                map.put("msg","wrong");
+            }
+            else{//用户存在于数据库
+                if(user2.getPassword().equals(request.getParameter("password"))){//密码相等
+                    HttpSession session=request.getSession();
+                    session.setAttribute("username",user2.getUsername());
+                    session.setAttribute("loginname",user2.getLoginname());
+                    System.out.println("新的获取session中的值"+request.getSession().getAttribute("username"));
+                    session.setAttribute("user_id",user2.getId());
+                    map.put("msg","success");
+                }
+                else{//密码不等
+                    map.put("msg","wrong");
+                }
+            }
+        }
+        return map;
+    }
+
+
     /**
      * 用户所有表的信息集合查询
      * @param modelMap 存储集合信息
@@ -149,9 +191,22 @@ public class UserController {
      */
     @RequestMapping(value="/updateuser")
     public String updateuser(User user1){
-        System.out.println("这个地方获得ID的值看看"+user1.getId());
+        //System.out.println("这个地方获得ID的值看看"+user1.getId());
         userservice.updateuser(user1);
         return "redirect:/user/userquery.action";
+    }
+    @RequestMapping(value="/tiaozhuan")
+    public String tioazhuan(HttpServletRequest request,User user1){
+        System.out.println("23123131231");
+        System.out.println("对象获取用户名的值"+user1.getUsername());
+        HttpSession session=request.getSession();
+        String username=(String)session.getAttribute("username");
+        System.out.println("string"+username);
+        System.out.println("获取用户名的值"+(String)request.getSession().getAttribute("username"));
+
+        //request.setAttribute("usernmae",request.getSession().getAttribute("username"));
+        //System.out.println(session.getAttribute("usernmae"));
+        return "main";
     }
 
 

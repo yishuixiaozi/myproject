@@ -9,7 +9,7 @@
 <head>
     <base href="<%=basePath%>">
 
-    <title>装修平台</title>
+    <title>人事管理系统</title>
     <meta http-equiv="pragma" content="no-cache">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="expires" content="0">
@@ -18,20 +18,6 @@
     <link rel="stylesheet" type="text/css" href="css/login.css"/>
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script src="https://cdn.bootcss.com/jquery.form/4.2.1/jquery.form.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#loginform1").ajaxForm(function (data) {
-                /*alert(data);*/
-                if (-1 < data.indexOf("right")) {
-                    window.location.href = "view/main.jsp";
-                }
-                else{
-                    alert("用户名或密码错误！");
-                }
-                $("#loginform1").resetForm();
-            })
-        })
-    </script>
 </head>
 
 <body>
@@ -77,14 +63,29 @@
     <div class="inner_bottom">
         <div class="bottom1">
             <p class="p_l">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Copyright &copy;
-                2004-2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;装修装饰（Decorating &nbsp;&nbsp;Houses）
-                &nbsp;&nbsp;&nbsp;&nbsp;粤ICP
-                备05062536号 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                增值电信业务经营许可证：&nbsp;&nbsp;粤B2-20110513</p>
+                2004-2014&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;人事管理（Decorating &nbsp;&nbsp;Houses）
+                &nbsp;&nbsp;&nbsp;&nbsp;ICPXX
+                备XXXXXXXX号 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                增值电信业务经营许可证：&nbsp;&nbsp;XXXXXXXXXXX</p>
             <p class="p_r"><img src="images/govIcon.gif" alt=""></p>
             <!--<p>免责声明：本网站设计用于理论学习</p>-->
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#loginform1").ajaxForm(function (data) {
+            /*alert(data);*/
+            if (-1 < data.indexOf("right")) {
+                window.location.href = "user/tiaozhuan.action";
+            }
+            else{
+                alert("用户名或密码错误！");
+            }
+            $("#loginform1").resetForm();
+        })
+    })
+</script>
 </body>
 </html>

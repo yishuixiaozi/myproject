@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -42,6 +43,9 @@ public class EmployeeController {
      */
     @RequestMapping(value="/deleteemployee")
     public String deleteemp(HttpServletRequest request){
+        HttpSession session=request.getSession();
+        String username=(String)session.getAttribute("username");
+        System.out.println("string"+username);
         int id=Integer.valueOf(request.getParameter("id"));
         employeeService.deleteemployee(id);
         return "redirect:/employee/employeequery.action";
